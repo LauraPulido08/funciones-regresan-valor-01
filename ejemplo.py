@@ -1,13 +1,17 @@
 # Importa el módulo datetime para manejar fechas y obtener el año actual
+
 import datetime
 def generar_reporte(): # Define una función en Python que devuelve un valor
+
     """
     Función que recopila datos de empleados, calcula su edad
     en función del año de nacimiento ingresado y retorna una lista con los datos formateados.
     """
+
     lista_final = []  # Lista que almacenará los datos ingresados por el usuario
     bandera = True  # Controla la ejecución del bucle while para permitir múltiples ingresos de datos
     # Inicia un bucle para ingresar información de empleados
+
     while bandera:
         # Captura el nombre y apellido del empleado
         nombre = input("Ingrese nombre de empleado: ")
@@ -38,7 +42,6 @@ def generar_reporte(): # Define una función en Python que devuelve un valor
 # Garantiza que el código dentro de este bloque solo se ejecute si el script
 # es ejecutado directamente y no si se importa como módulo en otro archivo
 if __name__ == "__main__":
-    #
     # Llamado a la función "generar_reporte"
     # La función devuelve una lista, por lo que es necesario almacenarla en una variable.
     lista = generar_reporte()
